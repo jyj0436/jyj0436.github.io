@@ -103,28 +103,49 @@ body {
   }
   .btn-search {
     border: 0;
-    berder radius: 5px;
+    border-radius: 5px;
     padding: 0.2rem 1rem;
-    background;
-    #99684;
+    background: #988684;
     color: #fff;
   }
 }
 
 
-}
-
 /* 데스크탑 */
+
 @media all and (min-width: 1000px) {
   .wrapper {
     align-items: center;
+    height: 3000px
   }
-  
   .header,
   .navigation,
   .main-content,
   .slogan,
   .footer {
     width: 80%;
+  }
+  .header {
+    /* TODO: 삭제예정 */
+    background: yellow;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+  .member {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .member a {
+    display: block;
+    padding: 1rem 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .member a::before {
+    content: "삼성증권"
   }
 }
