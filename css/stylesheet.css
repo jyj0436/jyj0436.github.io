@@ -154,7 +154,6 @@ body {
 .board li {
   display: flex;
   justify-content: space-between;
-  background: yellow;
 }
 
 .board li a {
@@ -162,7 +161,74 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background: pink;
+}
+
+.board time {
+  display: block;
+  width: 100px;
+  text-align: right;
+}
+
+.board {
+  position: relative;
+}
+
+.board-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.board-more:before {
+  content: "+";
+  color: hsla(100, 100%, 20%, 1);
+  margin-right: 0.3rem;
+  font-weight: 700;
+}
+
+
+/* 인기사이트*/
+
+.favorite-site ol {
+  overflow: hidden;
+}
+
+.favorite-site li {
+  counter-increment: number;
+}
+
+.favorite-site li:before {
+  content: counter(number, decimal);
+  background: #f00;
+  color: #FFF;
+  font-size: 0.8rem;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+
+/*트위터 */
+
+.twitter-profile {
+  width: 20%;
+  float: right;
+  text-align: right;
+}
+
+.twitter-profile img {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.twitter-date {
+  display: block;
+  clear: both;
+  text-align: right;
 }
 
 .slogan {
